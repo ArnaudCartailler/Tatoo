@@ -138,7 +138,7 @@ textarea {
      margin-left: 20px;
      margin-right: 20px;
    }
-   article{
+   article {
          padding-top: 80%;
    }
 
@@ -194,6 +194,7 @@ textarea {
      border-bottom: none;
      color: red;
    }
+
 
 
    /*Partie hover*/
@@ -479,6 +480,29 @@ header .nav a:hover{
     height:15rem;
 }
 
+.body_article {
+  width:60%;
+  margin:auto;
+  margin-top:10%;
+}
+
+.News_img {
+  height:8rem;
+  width:8rem;
+}
+
+.type_news {
+  background-color:white;
+  display:flex;
+  margin-top:4%;
+}
+
+.type_news p {
+  text-align:center;
+}
+
+
+
 /* ============================================================= Icons ===================================================================== */
 
 .Foot_black, .Foot_black .p_contact i:hover {
@@ -595,6 +619,28 @@ footer .p_contact i:hover {
 
 @media only screen and (max-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+
+    .body_article {
+      width:80%;
+      margin:auto;
+      margin-top:20%;
+    }
+
+    .News_img {
+      width:100%;
+    }
+
+    .type_news {
+      background-color:white;
+      display:flex;
+      flex-direction:column;
+      margin-top:4%;
+    }
+
+    .type_news p {
+      text-align:center;
+    }
+
 
     .Head_black {
       display:flex;
