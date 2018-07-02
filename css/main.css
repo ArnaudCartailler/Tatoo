@@ -10,6 +10,19 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+html, body {
+    margin:0;
+    padding:0;
+    background-color:black;
+    font-family: 'Abril Fatface', cursive;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -90,378 +103,295 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   @media  (max-width:320px) {
 
-<<<<<<< HEAD
+     header{
+     position: fixed;
+     display: flex;
+     background-color: black;
+     width: 100%;
+   }
+
+   header a{
+     text-decoration: none;
+     font-family: Courier, monospace;
+     color: white;
+     font-size: 20px;
+     text-transform: uppercase;
+   }
+
+   .nom-Paul{
+     margin : 20px 50px 0px 55px;
+     display: flex;
+   }
+
+   header .nom-Paul a{
+     font-size: 50px;
+   }
+
+   header .nav-Paul{
+     margin: 35px 150px 0px 0px;
+     font-weight: bold;
+   }
+
+   header .nav-Paul .space{
+     margin-left: 20px;
+     margin-right: 20px;
+   }
+   article{
+         padding-top: 80%;
+   }
+
+   form{
+     font-family: 'Encode Sans Condensed', sans-serif;
+     width: 100%;
+     margin-top: 2%;
+   }
+   .map{
+     width: 100%;
+
+   }
+   input{
+     width: 100%;
+     background-color: black;
+     border-top: none;
+     border-left: none;
+     border-right: none;
+     color: white;
+   }
+   textarea{
+     background-color: black;
+     margin-top: 5%;
+   }
+   .textarea{
+     text-align: center;
+     background-color: black;
+     margin-top: 5%;
+   }
+   .input1{
+     display: inline-flex;
+     color: white;
+   }
+   .monselect{
+     text-align: center;
+     margin-bottom: 10%;
+   }
+   .monselect > p{
+     color: white;
+   }
+   #subscribeNews{
+     width: 15px;
+   }
+   form > p{
+     color: white;
+   }
+   .adress{
+     text-align: center;
+     color:white;
+     font-weight: bold;
+   }
+   .bouton > input{
+     border-bottom: none;
+     color: red;
+   }
+
+
+   /*Partie hover*/
+
+   header .nav-Paul a:hover{
+   transition:0.6s ease 0s;
+   font-size: 25px;
+   color: red;
+   }
+
+
+   }
+
+   @media (min-width:320px) and (max-width: 740px) {
+
+     header{
+     position: fixed;
+     display: flex;
+     background-color: black;
+     width: 100%
+     }
+
+     header a{
+       text-decoration: none;
+       font-family: Courier, monospace;
+       color: white;
+       font-size: 20px;
+       text-transform: uppercase;
+     }
+
+     .nom-Paul{
+       margin : 20px 50px 0px 75px;
+       display: flex;
+     }
+
+     header .nom-Paul a{
+       font-size: 50px;
+     }
+
+     header .nav-Paul{
+       margin: 35px 150px 0px 0px;
+       font-weight: bold;
+     }
+
+     header .nav-Paul .space{
+       margin-left: 20px;
+       margin-right: 20px;
+     }
+     article{
+           padding-top: 24%;
+     }
+     form{
+       margin: 0 auto;
+       width: 80%;
+       margin-top: 2%;
+     }
+     .map{
+       width: 100%;
+
+     }
+     input{
+       width: 100%;
+       background-color: black;
+       border-top: none;
+       border-left: none;
+       border-right: none;
+       color: white;
+     }
+     textarea{
+       background-color: black;
+       margin-top: 5%;
+     }
+     .textarea{
+       text-align: center;
+       background-color: black;
+       margin-top: 5%;
+     }
+     .input1{
+       display: inline-flex;
+       color: white;
+     }
+     .monselect{
+       text-align: center;
+       margin-bottom: 10%;
+     }
+     .monselect > p{
+       color: white;
+     }
+     #subscribeNews{
+       width: 15px;
+     }
+     form > p{
+       color: white;
+     }
+     .adress{
+       text-align: center;
+       color:white;
+       font-weight: bold;
+     }
+     .bouton > input{
+       border-bottom: none;
+       color: red;
+     }
+
+
+   /*Partie hover*/
+
+     header .nav-Paul a:hover{
+       transition:0.6s ease 0s;
+       font-size: 25px;
+       color: red;
+     }
+     }
+   @media (min-width:740px) {
+
+     .nom-Paul{
+       margin : 20px 50px 0px 150px;
+       display: flex;
+     }
+
+     header .nom-Paul a{
+       font-size: 50px;
+     }
+
+     header .nav-Paul{
+       margin: 35px 150px 0px 280px;
+       font-weight: bold;
+     }
+
+     header .nav-Paul .space{
+       margin-left: 20px;
+       margin-right: 20px;
+     }
+     article{
+           padding-top: 7%;
+     }
+     form{
+       margin: 0 auto;
+       width: 50%;
+       margin-top: 2%;
+     }
+     .map{
+       width: 100%;
+
+     }
+     input{
+       width: 100%;
+       background-color: black;
+       border-top: none;
+       border-left: none;
+       border-right: none;
+       color: white;
+     }
+     textarea{
+       background-color: black;
+       margin-top: 5%;
+     }
+     .textarea{
+       text-align: center;
+       background-color: black;
+       margin-top: 5%;
+     }
+     .input1{
+       display: inline-flex;
+       color: white;
+     }
+     .monselect{
+       text-align: center;
+       margin-bottom: 10%;
+     }
+     .monselect > p{
+       color: white;
+     }
+     #subscribeNews{
+       width: 15px;
+     }
+     form > p{
+       color: white;
+     }
+     .adress{
+       text-align: center;
+       color:white;
+       font-weight: bold;
+     }
+     .bouton > input{
+       border-bottom: none;
+       color: red;
+     }
+
+   /*Partie hover*/
+
+   header .nav-Paul a:hover{
+     transition:0.6s ease 0s;
+     font-size: 25px;
+     color: red;
+   }
+   }
   /*La vidéo background*/
-
-  html, body {
-      margin:0;
-      padding:0;
-      background-color:black;
-      font-family: 'Abril Fatface', cursive;
-  }
-  body{
-    background-color: black;
-
-  }
-  @media  (max-width:320px) {
-
-    header{
-    position: fixed;
-    display: flex;
-    background-color: black;
-    width: 100%;
-  }
-
-  header a{
-    text-decoration: none;
-    font-family: Courier, monospace;
-    color: white;
-    font-size: 20px;
-    text-transform: uppercase;
-  }
-
-  .nom-Paul{
-    margin : 20px 50px 0px 55px;
-    display: flex;
-  }
-
-  header .nom-Paul a{
-    font-size: 50px;
-  }
-
-  header .nav-Paul{
-    margin: 35px 150px 0px 0px;
-    font-weight: bold;
-  }
-
-  header .nav-Paul .space{
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  article{
-        padding-top: 80%;
-  }
-
-  form{
-    font-family: 'Encode Sans Condensed', sans-serif;
-    width: 100%;
-    margin-top: 2%;
-  }
-  .map{
-    width: 100%;
-
-  }
-  input{
-    width: 100%;
-    background-color: black;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    color: white;
-  }
-  textarea{
-    background-color: black;
-    margin-top: 5%;
-  }
-  .textarea{
-    text-align: center;
-    background-color: black;
-    margin-top: 5%;
-  }
-  .input1{
-    display: inline-flex;
-    color: white;
-  }
-  .monselect{
-    text-align: center;
-    margin-bottom: 10%;
-  }
-  .monselect > p{
-    color: white;
-  }
-  #subscribeNews{
-    width: 15px;
-  }
-  form > p{
-    color: white;
-  }
-  .adress{
-    text-align: center;
-    color:white;
-    font-weight: bold;
-  }
-  .bouton > input{
-    border-bottom: none;
-    color: red;
-  }
-  footer {
-  bottom: 0;
-  color: white;
-  }
-
-  footer .p_contact-Paul{
-  margin : 0px 20px 20px 50px;
-  }
-
-  footer .p_contact-Paul i{
-  margin-right: 15px;
-  color: white;
-  }
-
-  /*Partie hover*/
-
-  header .nav-Paul a:hover{
-  transition:0.6s ease 0s;
-  font-size: 25px;
-  color: red;
-  }
-
-  footer .p_contact-Paul i:hover{
-  transition:0.6s ease 0s;
-  font-size: 45px;
-  color: red
-  }
-  }
-
-  @media (min-width:320px) and (max-width: 740px) {
-
-    header{
-    position: fixed;
-    display: flex;
-    background-color: black;
-    width: 100%
-  }
-
-  header a{
-    text-decoration: none;
-    font-family: Courier, monospace;
-    color: white;
-    font-size: 20px;
-    text-transform: uppercase;
-  }
-
-  .nom-Paul{
-    margin : 20px 50px 0px 75px;
-    display: flex;
-  }
-
-  header .nom-Paul a{
-    font-size: 50px;
-  }
-
-  header .nav-Paul{
-    margin: 35px 150px 0px 0px;
-    font-weight: bold;
-  }
-
-  header .nav-Paul .space{
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  article{
-        padding-top: 24%;
-  }
-  form{
-      margin: 0 auto;
-      width: 80%;
-      margin-top: 2%;
-    }
-    .map{
-      width: 100%;
-
-    }
-    input{
-      width: 100%;
-      background-color: black;
-      border-top: none;
-      border-left: none;
-      border-right: none;
-      color: white;
-    }
-    textarea{
-      background-color: black;
-      margin-top: 5%;
-    }
-    .textarea{
-      text-align: center;
-      background-color: black;
-      margin-top: 5%;
-    }
-    .input1{
-      display: inline-flex;
-      color: white;
-    }
-    .monselect{
-      text-align: center;
-      margin-bottom: 10%;
-    }
-    .monselect > p{
-      color: white;
-    }
-    #subscribeNews{
-      width: 15px;
-    }
-    form > p{
-      color: white;
-    }
-    .adress{
-      text-align: center;
-      color:white;
-      font-weight: bold;
-    }
-    .bouton > input{
-      border-bottom: none;
-      color: red;
-    }
-    footer {
-    bottom: 0;
-    color: white;
-  }
-
-  footer .p_contact-Paul{
-    margin : 0px 20px 20px 50px;
-  }
-
-  footer .p_contact-Paul i{
-    margin-right: 15px;
-    color: white;
-  }
-
-  /*Partie hover*/
-
-  header .nav-Paul a:hover{
-    transition:0.6s ease 0s;
-    font-size: 25px;
-    color: red;
-  }
-
-  footer .p_contact-Paul i:hover{
-    transition:0.6s ease 0s;
-    font-size: 45px;
-    color: red
-  }
-
-  }
-  @media (min-width:740px) {
-
-
-    header{
-    position: fixed;
-    display: flex;
-    background-color: black;
-    width: 100%;
-  }
-
-  header a{
-    text-decoration: none;
-    font-family: Courier, monospace;
-    color: white;
-    font-size: 20px;
-    text-transform: uppercase;
-  }
-
-  .nom-Paul{
-    margin : 20px 50px 0px 150px;
-    display: flex;
-  }
-
-  header .nom-Paul a{
-    font-size: 50px;
-  }
-
-  header .nav-Paul{
-    margin: 35px 150px 0px 280px;
-    font-weight: bold;
-  }
-
-  header .nav-Paul .space{
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  article{
-        padding-top: 7%;
-  }
-    form{
-      margin: 0 auto;
-      width: 50%;
-      margin-top: 2%;
-    }
-    .map{
-      width: 100%;
-
-    }
-    input{
-      width: 100%;
-      background-color: black;
-      border-top: none;
-      border-left: none;
-      border-right: none;
-      color: white;
-    }
-    textarea{
-      background-color: black;
-      margin-top: 5%;
-    }
-    .textarea{
-      text-align: center;
-      background-color: black;
-      margin-top: 5%;
-    }
-    .input1{
-      display: inline-flex;
-      color: white;
-    }
-    .monselect{
-      text-align: center;
-      margin-bottom: 10%;
-    }
-    .monselect > p{
-      color: white;
-    }
-    #subscribeNews{
-      width: 15px;
-    }
-    form > p{
-      color: white;
-    }
-    .adress{
-      text-align: center;
-      color:white;
-      font-weight: bold;
-    }
-    .bouton > input{
-      border-bottom: none;
-      color: red;
-    }
-    footer {
-    bottom: 0;
-    color: white;
-  }
-
-  footer .p_contact-Paul{
-    margin : 0px 20px 20px 50px;
-  }
-
-  footer .p_contact-Paul i{
-    margin-right: 15px;
-    color: white;
-  }
-
-  /*Partie hover*/
-
-  header .nav-Paul a:hover{
-    transition:0.6s ease 0s;
-    font-size: 25px;
-    color: red;
-  }
-
-  footer .p_contact-Paul i:hover{
-    transition:0.6s ease 0s;
-    font-size: 45px;
-    color: red
-  }
-  }
 
    video#bgvid {
        position: fixed;
@@ -482,10 +412,19 @@ textarea {
 
 /*Le header*/
 
-header{
+.Head_black {
+  background-color:#1A0D00;
+  opacity:0.4;
+  width:100%;
+  border-bottom:0.8px solid black;
+}
+
+header {
+  top:0;
   position: fixed;
   display: flex;
 }
+
 
 header a{
   text-decoration: none;
@@ -514,24 +453,6 @@ header .nav .space{
   margin-right: 20px;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  color: white;
-}
-
-footer .p_contact{
-  margin : 0px 20px 20px 50px;
-}
-
-
-footer .p_contact i{
-  margin-right: 15px;
-  color: white;
-}
-
 /*Partie hover*/
 
 header .nav a:hover{
@@ -540,13 +461,8 @@ header .nav a:hover{
   color: red;
 }
 
-footer .p_contact i:hover{
-  transition:0.6s ease 0s;
-  font-size: 45px;
-  color: red
-}
 
-/*partie gallerie*/
+/* ========================================================== Main block - IMG ============================================================= */
 
 .Main_content {
     width:80%;
@@ -562,24 +478,35 @@ footer .p_contact i:hover{
     width:18rem;
     height:15rem;
 }
-=======
 
+/* ============================================================= Icons ===================================================================== */
 
+.Foot_black, .Foot_black .p_contact i:hover {
+  opacity:0.6;
+}
 
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+}
 
+footer .p_contact {
+  margin : 0px 20px 20px 50px;
+}
 
+footer .p_contact i {
+  margin-right: 15px;
+  color: white;
+}
 
-
-
-
-
-
-
-
-
-
-
->>>>>>> 3fab1219def12e9f9e0894f6431a92818d91601a
+footer .p_contact i:hover {
+  transition:0.6s ease 0s;
+  font-size: 45px;
+  color: red
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -669,6 +596,14 @@ footer .p_contact i:hover{
 @media only screen and (max-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 
+    .Head_black {
+      display:flex;
+      flex-direction:row;
+    }
+
+    .Head_black .nom {
+      margin:auto;
+    }
 
     header{
       display: flex;
@@ -688,18 +623,15 @@ footer .p_contact i:hover{
     }
 
     header .nav{
+      display:flex;
+      flex-direction:column;
       width : 100%;
-      text-align: left;
+
       margin: 20px 0px 0px 40px;
       margin-left: 20%;
       font-weight: bold;
       line-height: 300%;
       list-style-type: none;
-    }
-
-    header .nav ul li{
-      display: flex;
-      justify-content: center;
     }
 
     header .nav .space{
@@ -713,6 +645,10 @@ footer .p_contact i:hover{
 
     footer .p_contact{
       margin: 0px 0px 10px 40px;
+    }
+
+    #Little_img {
+      margin-top:5%;
     }
 }
 
@@ -738,6 +674,11 @@ footer .p_contact i:hover{
     line-height: 40px;
     margin : 50px 50px 0px 50px;
   }
+}
+
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
