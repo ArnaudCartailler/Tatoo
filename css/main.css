@@ -16,6 +16,13 @@ html {
     line-height: 1.4;
 }
 
+html, body {
+    margin:0;
+    padding:0;
+    background-color:black;
+    font-family: 'Abril Fatface', cursive;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -162,6 +169,7 @@ footer .p_contact{
   margin : 0px 20px 20px 50px;
 }
 
+
 footer .p_contact i{
   margin-right: 15px;
   color: white;
@@ -181,6 +189,22 @@ footer .p_contact i:hover{
   color: red
 }
 
+/*partie gallerie*/
+
+.Main_content {
+    width:80%;
+    margin:auto;
+    margin-top:15%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    justify-content:space-around;
+}
+
+#Little_img {
+    width:18rem;
+    height:15rem;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -267,8 +291,78 @@ footer .p_contact i:hover{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+
+
+    header{
+      display: flex;
+      flex-direction: column;
+    }
+
+    header .nom{
+      width : 70%;
+      height : 20%;
+      margin : 20%;
+    }
+
+    header .nom a{
+      margin : 0;
+      font-size: 35px;
+      text-align: center;
+    }
+
+    header .nav{
+      width : 100%;
+      text-align: left;
+      margin: 20px 0px 0px 40px;
+      margin-left: 20%;
+      font-weight: bold;
+      line-height: 300%;
+      list-style-type: none;
+    }
+
+    header .nav ul li{
+      display: flex;
+      justify-content: center;
+    }
+
+    header .nav .space{
+      margin-left: 10%;
+    }
+
+    header .nav .spacecontact{
+      width : 50%;
+      display: flex;
+    }
+
+    footer .p_contact{
+      margin: 0px 0px 10px 40px;
+    }
+}
+
+@media only screen and (min-width: 561px) and (max-width :660px) {
+  header .nav{
+    width : 70%;
+    text-align: left;
+    margin: 20px 100px 0px 40px;
+    font-weight: bold;
+    line-height: 300%;
+    list-style-type: none;
+  }
+
+  header .nav .space{
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (min-width: 661px) and (max-width :1250px){
+
+  header .nav{
+    width : 60%;
+    line-height: 40px;
+    margin : 50px 50px 0px 50px;
+  }
 }
 
 @media print,
