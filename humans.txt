@@ -5,6 +5,10 @@
 
     <name> -- <role> -- <twitter>
 
+	Arnaud Cartailler : admin repo - accueil.html
+	Paul Decoux : contact.html
+	Nicolas Hallaert : galery.html
+
 # THANKS
 
     <name>
