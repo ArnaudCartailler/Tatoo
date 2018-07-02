@@ -104,45 +104,75 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+  /*La vidéo background*/
+
+   video#bgvid {
+       position: fixed;
+       top: 50%;
+       left: 50%;
+       min-width: 100%;
+       min-height: 100%;
+       width: auto;
+       height: auto;
+       z-index: -100;
+       -ms-transform: translateX(-50%) translateY(-50%);
+       -moz-transform: translateX(-50%) translateY(-50%);
+       -webkit-transform: translateX(-50%) translateY(-50%);
+       transform: translateX(-50%) translateY(-50%);
+       background: url(polina.jpg) no-repeat;
+       background-size: cover;
+   }
+
+/*Le header*/
+
+.Head_black {
+  background-color:#1A0D00;
+  opacity:0.5;
+  border-bottom:0.8px solid black;
+}
 
 header {
-    width:100%;
-    height:18%;
-    display:flex;
-    flex-direction:row;
-    position:fixed;
-    color:white;
-    background-color:#1A0D00;
-    opacity:0.4;
-    border-bottom:0.8px black outset;
-    top:0;
+  top:0;
+  position: fixed;
+  display: flex;
 }
 
-.title {
-    font-size:0.8rem;
+
+header a{
+  text-decoration: none;
+  font-family: Courier, monospace;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
-.nav_menu {
-    position:absolute;
-    right:0;
-    margin:auto;
-    padding:auto;
-}
-.nav_menu ul {
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
+.nom{
+  margin : 20px 50px 0px 150px;
+  display: flex;
 }
 
-.nav_menu li {
-    list-style:none;
+header .nom a{
+  font-size: 50px;
 }
 
-.nav_menu a {
-    color:white;
-    padding-right:1.2rem;
-    text-decoration:none;
+header .nav{
+  margin: 35px 150px 0px 280px;
+  font-weight: bold;
 }
+
+header .nav .space{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/*Partie hover*/
+
+header .nav a:hover{
+  transition:0.6s ease 0s;
+  font-size: 25px;
+  color: red;
+}
+
 
 /* ========================================================== Main block - IMG ============================================================= */
 
@@ -163,23 +193,31 @@ header {
 
 /* ============================================================= Icons ===================================================================== */
 
+.Foot_black, .Foot_black .p_contact i:hover {
+  opacity:0.6;
+}
 footer {
-    margin-top:35px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
 }
 
-#Icon {
-    height:2.5rem;
-    width:2.5rem;
+footer .p_contact {
+  margin : 0px 20px 20px 50px;
+}  
+
+footer .p_contact i {
+  margin-right: 15px;
+  color: white;
 }
 
-
-
-
-
-
-
-
-
+footer .p_contact i:hover {
+  transition:0.6s ease 0s;
+  font-size: 45px;
+  color: red
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
