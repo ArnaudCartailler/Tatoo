@@ -127,7 +127,8 @@ textarea {
 
 .Head_black {
   background-color:#1A0D00;
-  opacity:0.5;
+  opacity:0.4;
+  width:100%;
   border-bottom:0.8px solid black;
 }
 
@@ -196,6 +197,7 @@ header .nav a:hover{
 .Foot_black, .Foot_black .p_contact i:hover {
   opacity:0.6;
 }
+
 footer {
   position: fixed;
   bottom: 0;
@@ -303,6 +305,90 @@ footer .p_contact i:hover {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+@media only screen and (max-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+
+    .Head_black {
+      display:flex;
+      flex-direction:row;
+    }
+
+    .Head_black .nom {
+      margin:auto;
+    }
+
+    header{
+      display: flex;
+      flex-direction: column;
+    }
+
+    header .nom{
+      width : 70%;
+      height : 20%;
+      margin : 20%;
+    }
+
+    header .nom a{
+      margin : 0;
+      font-size: 35px;
+      text-align: center;
+    }
+
+    header .nav{
+      display:flex;
+      flex-direction:column;
+      width : 100%;
+    
+      margin: 20px 0px 0px 40px;
+      margin-left: 20%;
+      font-weight: bold;
+      line-height: 300%;
+      list-style-type: none;
+    }
+
+    header .nav .space{
+      margin-left: 10%;
+    }
+
+    header .nav .spacecontact{
+      width : 50%;
+      display: flex;
+    }
+
+    footer .p_contact{
+      margin: 0px 0px 10px 40px;
+    }
+
+    #Little_img {
+      margin-top:5%;
+    }
+}
+
+@media only screen and (min-width: 561px) and (max-width :660px) {
+  header .nav{
+    width : 70%;
+    text-align: left;
+    margin: 20px 100px 0px 40px;
+    font-weight: bold;
+    line-height: 300%;
+    list-style-type: none;
+  }
+
+  header .nav .space{
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (min-width: 661px) and (max-width :1250px){
+
+  header .nav{
+    width : 60%;
+    line-height: 40px;
+    margin : 50px 50px 0px 50px;
+  }
+}
+
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
