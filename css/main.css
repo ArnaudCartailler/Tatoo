@@ -476,6 +476,7 @@ header .nav a:hover{
 }
 
 #Little_img {
+    margin-top:5vh;
     width:18rem;
     height:15rem;
 }
