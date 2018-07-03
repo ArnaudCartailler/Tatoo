@@ -7,7 +7,7 @@
 
 	Arnaud Cartailler : admin repo - accueil.html
 	Paul Decoux : contact.html
-	Nicolas Hallaert : galery.html
+	Nicolas Hallaert : galery.html; blog.html
 
 # THANKS
 
